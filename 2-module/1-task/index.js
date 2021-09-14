@@ -7,5 +7,3 @@ function sumSalary(obj) {
   }
   return sum;
 }
-
-
