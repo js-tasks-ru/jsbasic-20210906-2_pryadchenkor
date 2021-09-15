@@ -1,13 +1,9 @@
-function sumSalary(salaries) {
-  let sumOfSalaries = 0;
-
-  for (let key in salaries) {
-    let isSalary = typeof salaries[key] === 'number' && Number.isFinite(salaries[key]);
-
-    if (isSalary) {
-      sumOfSalaries += salaries[key];
+function sumSalary(obj) {
+  let sum = 0;
+  for (let salary of Object.values(obj)) {
+    if (typeof salary === "number" && Number.isFinite(salary)) {
+      sum += salary;
     }
   }
-
-  return sumOfSalaries;
+  return sum;
 }
