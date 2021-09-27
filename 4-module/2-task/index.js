@@ -1,5 +1,5 @@
 function makeDiagonalRed(table) {
-  const tableRow = tabdiagonalRedle.getElementsByTagName("tr");
+  const tableRow = table.getElementsByTagName("tr");
 
   const trArr = [...tableRow];
   const newArr = [];
